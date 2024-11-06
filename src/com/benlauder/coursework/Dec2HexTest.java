@@ -26,7 +26,8 @@ public class Dec2HexTest {
 
      private String convertDecimalToHex(int decimal) {
         // Array of characters to represent hexadecimal digits
-        int rem, num;
+        int rem;
+        int num;
         num = decimal;
         String hexadecimal = "";
         boolean isNegative = num < 0;
@@ -34,6 +35,7 @@ public class Dec2HexTest {
             num = -num;
         }
         char[] ch = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+
 
 
         // Loop to convert decimal to hexadecimal
