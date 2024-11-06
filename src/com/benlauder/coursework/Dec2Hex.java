@@ -20,7 +20,8 @@ class Dec2Hex {
 
         // Array of characters to represent hexadecimal digits
         char ch[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-        int rem, num;
+        int rem;
+        int num;
         num = Arg1;
         String hexadecimal = "";
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
