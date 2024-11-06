@@ -24,7 +24,7 @@ public class Dec2HexTest {
         assertEquals("Hexadecimal conversion failed for negative number", "-A", convertDecimalToHex(-10));
     }
 
-    private String convertDecimalToHex(int decimal) {
+     private String convertDecimalToHex(int decimal) {
         // Array of characters to represent hexadecimal digits
         char ch[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         int rem, num;
@@ -34,6 +34,8 @@ public class Dec2HexTest {
         if (isNegative) {
             num = -num;
         }
+        char[] ch = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+
 
         // Loop to convert decimal to hexadecimal
         while (num != 0) {
