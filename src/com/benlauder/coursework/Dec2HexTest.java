@@ -13,10 +13,11 @@ public class Dec2HexTest {
     @Test
     public void testDecimalToHexadecimal() {
         assertEquals("Hexadecimal conversion failed", "A", convertDecimalToHex(10));
-        assertEquals("Hexadecimal conversion failed", "1E", convertDecimalToHex(30));
-        assertEquals("Hexadecimal conversion failed", "FF", convertDecimalToHex(255));
-        assertEquals("Hexadecimal conversion failed", "0", convertDecimalToHex(0));
-    }
+        final String HEX_CONVERSION_FAILED = "Hexadecimal conversion failed";
+        assertEquals(HEX_CONVERSION_FAILED, "1E", convertDecimalToHex(30));
+        assertEquals(HEX_CONVERSION_FAILED, "FF", convertDecimalToHex(255));
+        assertEquals(HEX_CONVERSION_FAILED, "0", convertDecimalToHex(0));
+        }
 
     @Test
     public void testNegativeDecimalToHexadecimal() {
