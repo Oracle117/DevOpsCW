@@ -26,7 +26,6 @@ public class Dec2HexTest {
 
      private String convertDecimalToHex(int decimal) {
         // Array of characters to represent hexadecimal digits
-        char ch[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         int rem, num;
         num = decimal;
         String hexadecimal = "";
