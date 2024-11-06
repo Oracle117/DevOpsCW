@@ -1,3 +1,4 @@
+123
 package src.com.benlauder.coursework;
 class Dec2Hex {
     public static int Arg1;
