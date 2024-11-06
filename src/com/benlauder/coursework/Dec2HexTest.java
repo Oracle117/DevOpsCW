@@ -37,17 +37,18 @@ public class Dec2HexTest {
 
 
         // Loop to convert decimal to hexadecimal
+        StringBuilder sb = new StringBuilder();
         while (num != 0) {
             rem = num % 16;
-            StringBuilder sb = new StringBuilder(hexadecimal);
             sb.insert(0, ch[rem]);
-            hexadecimal = sb.toString();
             num = num / 16;
         }
 
-        if (hexadecimal.isEmpty()) {
-            hexadecimal = "0";
+        if (sb.length() == 0) {
+            sb.append("0");
         }
+
+        hexadecimal = sb.toString();
 
         if (isNegative) {
             hexadecimal = "-" + hexadecimal;
